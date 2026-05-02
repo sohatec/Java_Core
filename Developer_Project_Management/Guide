@@ -1,8 +1,10 @@
+I wrote in Java program language and used JDK21 in this project.
 You only download all files of source and import into InteliiJ to Run.
-I used JDK21 in this project.
 Include 6 files: Main.java
                  Menu.java
                  User.java
                  Developer.java
                  Project.java
                  DataFile.java
+Description: This is a management program to manage developer and project in a company or orgnization.
+             Developer and project link each other by ID.
