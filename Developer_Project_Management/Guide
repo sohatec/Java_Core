@@ -1,0 +1,8 @@
+You only download all files of source and import into InteliiJ to Run.
+I used JDK21 in this project.
+Include 6 files: Main.java
+                 Menu.java
+                 User.java
+                 Developer.java
+                 Project.java
+                 DataFile.java
