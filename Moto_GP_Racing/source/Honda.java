@@ -11,7 +11,6 @@ public class Honda extends MotoGP{
     @Override
     public double racingOpeningLap(){
         return 300 + (new Random().nextDouble() * (MAX_SPEED - 300));
-        // random tufw 300 ddeesn 350
     }
 
     @Override
