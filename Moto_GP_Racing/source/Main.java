@@ -100,7 +100,7 @@ public class Main {
         listOfEveluate.sort((a, b) -> Double.compare(b.speed, a.speed));
         System.out.println("\n<<<<<-----Opening lap----->>>>>");
         System.out.println("|Brand     |Racer     |No   |Speed   |");
-        for(MainRacingResult rws : listOfEveluate){ // in ra kết quả sau khi sắp xếp
+        for(MainRacingResult rws : listOfEveluate){
             rws.motor.showResultOpeningLap(rws.speed);
         }
     }
