@@ -5,17 +5,21 @@ public class Main {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
-        User user = new User();
         Developer developer = new Developer();
         Project project = new Project();
         DataFile dataFile = new DataFile();
         Scanner sc = new Scanner(System.in);
 
         clearScreen();
+        User user = downloadDatabase();
         menu.welcome();
-        user.createAccount();
-        user.userLogin();
-        downloadDatabase();
+        if(user == null){
+            user = new User();
+            user.createAccount();
+            user.userLogin();
+        }else{
+             user.userLogin();
+        }
 
         int choice, choice1, choice12, choice13, choice14, choice2, choice22,
             choice23,  choice3, choice4;
@@ -290,7 +294,7 @@ public class Main {
         menu.goodBye();
     }
 
-    public static void downloadDatabase(){
+    public static User downloadDatabase(){
         User user = new User();
         Developer developer = new Developer();
         Project project = new Project();
@@ -305,6 +309,7 @@ public class Main {
         if(tempPro != null && !tempPro.isEmpty()){
             Project.getListOfProject().addAll(tempPro);
         }
+        return user;
     }
 
     public static void pressEnter(){
