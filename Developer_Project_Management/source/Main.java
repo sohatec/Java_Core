@@ -5,20 +5,20 @@ public class Main {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
-        User user = new User();
         Developer developer = new Developer();
         Project project = new Project();
         DataFile dataFile = new DataFile();
         Scanner sc = new Scanner(System.in);
 
         clearScreen();
-        User userLoad = downloadDatabase();
+        User user = downloadDatabase();
         menu.welcome();
-        if(userLoad == null){
+        if(user == null){
+            user = new User();
             user.createAccount();
             user.userLogin();
         }else{
-             userLoad.userLogin();
+             user.userLogin();
         }
 
         int choice, choice1, choice12, choice13, choice14, choice2, choice22,
