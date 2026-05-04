@@ -322,7 +322,6 @@ public class Main {
                 System.out.flush();
             }
         } catch (Exception e) {
-            // Chống cháy nếu chạy trong IDE không hỗ trợ ANSI
             for (int i = 0; i < 50; i++) System.out.println();
         }
     }
