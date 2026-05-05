@@ -220,7 +220,7 @@ public class SeniorStaff {
     public void deleteReportSenior() {
         System.out.print("=== Input Senior's ID To Delete Report: ");
         String id = sc.nextLine();
-        if (SQLServerProvider.getSeniorById(id) != null) {
+        if (SQLServerProvider.getSeniorById(id) == null) {
             MongoCollection<Document> collection = MongoDBProvider.getDatabaseSeniorStaff().getCollection("Content");
             long deletedCount = collection.deleteOne(Filters.eq("seniorId", id)).getDeletedCount();
             if (deletedCount > 0) {
@@ -229,7 +229,7 @@ public class SeniorStaff {
                 System.out.println("=== This ID Does Not Have Report In Database To Delete ===");
             }
         } else {
-            System.out.println("=== Error: ID Is Not Exist In SQL Server.");
+            System.out.println("=== Error: ID Is Still Exist In SQL Server.");
         }
     }
 }
