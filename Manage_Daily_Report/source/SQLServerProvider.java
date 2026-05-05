@@ -8,8 +8,8 @@ public class SQLServerProvider {
 
     private static final String URLJUNIORSTAFF = "jdbc:sqlserver://localhost:1433;databaseName=JuniorStaff;encrypt=true;trustServerCertificate=true;";
     private static final String URLSENIORSTAFF = "jdbc:sqlserver://localhost:1433;databaseName=SeniorStaff;encrypt=true;trustServerCertificate=true;";
-    private static final String USER = "sa";
-    private static final String PASS = "QLS26@#27Henry!";
+    private static final String USER = "YOUR_USER_NAME";
+    private static final String PASS = "YOUR_PASSWORD";
 
     public static Connection getDatabaseJuniorStaff() throws SQLException {
         return DriverManager.getConnection(URLJUNIORSTAFF, USER, PASS);
@@ -172,7 +172,7 @@ public class SQLServerProvider {
                 ));
             }
         } catch (SQLException e) { e.printStackTrace(); }
-        return list; // Kết nối tự động đóng nhờ try-with-resources
+        return list;
     }
 
     public static List<SeniorStaff> getAllSeniorStaff() {
