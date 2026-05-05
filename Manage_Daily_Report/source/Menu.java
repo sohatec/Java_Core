@@ -77,11 +77,11 @@ public class Menu {
         System.out.println("||     THANK YOU FOR YOUR USING OUR SERVICES      ||");
         System.out.println("||   Please contact us for further information    ||");
         System.out.println("====================================================");
-        System.out.println("||  Vuong Tran Hieu Nghia                         ||");
-        System.out.println("||  0325580956                                    ||");
-        System.out.println("||  nghiahieu@gmail.com                           ||");
-        System.out.println("||  23 Ly Thuong Kiet, District 10, HCM City      ||");
-        System.out.println("||  sohatec company - @Copyright                  ||");
+        System.out.println("||  your_information                              ||");
+        System.out.println("||  your_information                              ||");
+        System.out.println("||  your_information                              ||");
+        System.out.println("||  your_information                              ||");
+        System.out.println("||  your_information                              ||");
         System.out.println("====================================================");
     }
 }
