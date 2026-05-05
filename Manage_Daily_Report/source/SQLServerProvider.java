@@ -54,7 +54,7 @@ public class SQLServerProvider {
                 return seniorStaff.getSeniorId();
             }
         } catch (SQLException e) {
-            System.err.println("=== Error Of SQL Server: " + e.getMessage() + " ===");
+            e.printStackTrace();
         }
         return null;
     }
