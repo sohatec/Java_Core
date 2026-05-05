@@ -1,1 +1,39 @@
-Hello !!!
+This ia a project manage all report of junior and senior staff and storage in SQL Server (information of staff), in MongoDB (report of staff).
+To use this project, you have to install SQL Server and MongoDB on Docker (on MacOS M1).
+I use InteliiJ (JDK21), macOS M1, Docker has installed SQL Server and MongoDB for this project.
+
+=== SQL Server ===
+- Create database and table for junior staff:
+  >_ CREATE DATABASE JuniorStaff;
+  >_ CRETAE TABLE Junior(
+        ID VARCHAR(10).
+        Name VARCHAR(40),
+        Email VARCHAR(50),
+        Language VARCHAR(40)
+     );
+
+- Create database and table for senior staff:
+  >_ CREATE DATABASE SeniorStaff;
+  >_ CRETAE TABLE Senior(
+        ID VARCHAR(10).
+        Name VARCHAR(40),
+        Email VARCHAR(50),
+        Language VARCHAR(40)
+     );
+
+=== MongoDB ===
+- Create database and collection for junior staff:
+  >_ const database = 'JuniorStaff';
+     const collection = 'Content';
+     use('JuniorStaff');
+     db.getCollection('Content').insertOne({
+     "message": "=== Cretae Successfully ===",
+     "createdAt": new Date()
+
+- Create database and collection for senior staff:
+  >_ const database = 'SeniorStaff';
+     const collection = 'Content';
+     use('SeniorStaff');
+     db.getCollection('Content').insertOne({
+     "message": "=== Cretae Successfully ===",
+     "createdAt": new Date()
