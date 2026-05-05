@@ -6,8 +6,8 @@ import java.util.List;
 
 public class SQLServerProvider {
 
-    private static final String URLJUNIORSTAFF = "jdbc:sqlserver://localhost:1433;databaseName=JuniorStaff;encrypt=true;trustServerCertificate=true;";
-    private static final String URLSENIORSTAFF = "jdbc:sqlserver://localhost:1433;databaseName=SeniorStaff;encrypt=true;trustServerCertificate=true;";
+    private static final String URLJUNIORSTAFF = "jdbc:sqlserver://localhost:YOUR_PORT;databaseName=JuniorStaff;encrypt=true;trustServerCertificate=true;";
+    private static final String URLSENIORSTAFF = "jdbc:sqlserver://localhost:YOUR_PORT;databaseName=SeniorStaff;encrypt=true;trustServerCertificate=true;";
     private static final String USER = "YOUR_USER_NAME";
     private static final String PASS = "YOUR_PASSWORD";
 
