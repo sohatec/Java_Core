@@ -1,6 +1,7 @@
 This ia a project manage all report of junior and senior staff and storage in SQL Server (information of staff), in MongoDB (report of staff).
 To use this project, you have to install SQL Server and MongoDB on Docker (on MacOS M1).
 I use InteliiJ (JDK21), macOS M1, Docker has installed SQL Server and MongoDB for this project.
+Run on terminal is better !!!
 
 === SQL Server ===
 - Create database and table for junior staff:
