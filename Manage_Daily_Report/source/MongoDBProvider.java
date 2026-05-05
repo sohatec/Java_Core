@@ -11,14 +11,14 @@ public class MongoDBProvider {
 
     public static MongoDatabase getDatabaseJuniorStaff() {
         if (mongoClient == null) {
-            mongoClient = MongoClients.create("mongodb://YOUR_USER_NAME:YOUR_PASSWORD@localhost:27017/?authSource=admin");
+            mongoClient = MongoClients.create("mongodb://YOUR_USER_NAME:YOUR_PASSWORD@localhost:YOUR_PORT/?authSource=admin");
         }
         return mongoClient.getDatabase("JuniorStaff");
     }
 
     public static MongoDatabase getDatabaseSeniorStaff() {
         if (mongoClient == null) {
-            mongoClient = MongoClients.create("mongodb://YOUR_USER_NAME:YOUR_PASSWORD@localhost:27017/?authSource=admin");
+            mongoClient = MongoClients.create("mongodb://YOUR_USER_NAME:YOUR_PASSWORD@localhost:YOUR_PORT/?authSource=admin");
         }
         return mongoClient.getDatabase("SeniorStaff");
     }
