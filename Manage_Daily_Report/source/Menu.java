@@ -77,11 +77,11 @@ public class Menu {
         System.out.println("||     THANK YOU FOR YOUR USING OUR SERVICES      ||");
         System.out.println("||   Please contact us for further information    ||");
         System.out.println("====================================================");
-        System.out.println("||  your_information                              ||");
-        System.out.println("||  your_information                              ||");
-        System.out.println("||  your_information                              ||");
-        System.out.println("||  your_information                              ||");
-        System.out.println("||  your_information                              ||");
+        System.out.println("||  YOUR_INFORMATION                              ||");
+        System.out.println("||  YOUR_INFORMATION                              ||");
+        System.out.println("||  YOUR_INFORMATION                              ||");
+        System.out.println("||  YOUR_INFORMATION                              ||");
+        System.out.println("||  YOUR_INFORMATION                              ||");
         System.out.println("====================================================");
     }
 }
