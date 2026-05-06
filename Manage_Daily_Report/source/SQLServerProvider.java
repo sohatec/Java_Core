@@ -101,8 +101,8 @@ public class SQLServerProvider {
         return null;
     }
 
-    public static boolean updateJuniorField(String id, String newName, String newValue) {
-        String sql = "UPDATE Junior SET " + newName + " = ? WHERE ID = ?";
+    public static boolean updateJuniorField(String id, String nameColumn, String newValue) {
+        String sql = "UPDATE Junior SET " + nameColumn + " = ? WHERE ID = ?";
 
         try (Connection conn = getDatabaseJuniorStaff();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -118,8 +118,8 @@ public class SQLServerProvider {
         }
     }
 
-    public static boolean updateSeniorField(String id, String newName, String newValue) {
-        String sql = "UPDATE Senior SET " + newName + " = ? WHERE ID = ?";
+    public static boolean updateSeniorField(String id, String nameColumn, String newValue) {
+        String sql = "UPDATE Senior SET " + nameColumn + " = ? WHERE ID = ?";
 
         try (Connection conn = getDatabaseSeniorStaff();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
